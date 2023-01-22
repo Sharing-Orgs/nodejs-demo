@@ -4,7 +4,7 @@ const port = process.env.PORT || 3000;
 
 app.get(["/", "/:name"], (req, res) => {
   greeting = "<h1>Welcome to NodeJs!</h1>";
-  name = req.params["name"];
+  const name = req.params["name"];
   if (name) {
     res.send(greeting + "</br>Hi, " + name);
   } else {
@@ -12,5 +12,4 @@ app.get(["/", "/:name"], (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`Server is listening on port ${port}!`))
-
+app.listen(port, () => console.log(`Server is listening on port ${port}!`));
