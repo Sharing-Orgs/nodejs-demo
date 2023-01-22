@@ -1,3 +1,6 @@
-# Welcome to NodeJs
+**Welcome to Express App**
 
-## An Express App Example
+###### To start server in localhost:
+
+* Run `yarn` / `npm i` to install node_modules
+* Run `yarn start` / `npm run start` to start server
